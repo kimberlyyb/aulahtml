@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento select</title>
+</head>
+
+<body>
+    <form action="mailto:kimkimsvl@gmail.com" method="post">
+
+        <fieldset>
+            <legend>Dados caastrais do aluno</legend>
+
+            <!-- input entrada de informação do usuário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+            <br><br>
+
+            <label for="email"> E-mail:</label>
+            <input type="email" id="email">
+            <br><br>
+            <label for="enedereco">Endereço:</label>
+            <input type="text" id="endereco">
+            <br><br>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Dados do curso</legend>
+
+            <label for="listaUnidades">Selecione sua unidade:</label>
+            <select name="listaUnidades" id="listaUnidades">
+                <option value="unidade" disabled selected>Unidade</option>
+                <option value="santana">Santana</option>
+                <option value="diadema">Diadema</option>
+                <option value="santoamaro">Santo Amaro</option>
+                <option value="itaquera">Itaquera</option>
+
+            </select>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Informações do aluno</legend>
+            <p>Onde você mora:</p>
+            <input type="text" list="cidade" autocomplete="on" name="listaCidade" placeholder="Digite sua cidade">
+            <datalist id="cidade">
+                <option value="São Paulo"></option>
+                <option value="Juquitiba"></option>
+                <option value="Campinas"></option>
+                <option value="Santo André"></option>
+        </fieldset>
+        </datalist>
+
+        <br><br>
+        <fieldset>
+            <legend>Comentários</legend>
+
+            <p>Fale sua opnião</p>
+            <textarea name="avaliacao" id="avaliacao" cols="30" rows="10" maxlength="30"
+                placeholder="Deixe aqui o seu commentário"></textarea>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
